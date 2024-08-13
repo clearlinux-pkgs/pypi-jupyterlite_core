@@ -7,7 +7,7 @@
 #
 Name     : pypi-jupyterlite_core
 Version  : 0.4.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/b9/77/ea3d9c15a264aea0a24d2af5a5e6b48282c33fb860e50a13af6863a121b3/jupyterlite_core-0.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b9/77/ea3d9c15a264aea0a24d2af5a5e6b48282c33fb860e50a13af6863a121b3/jupyterlite_core-0.4.0.tar.gz
 Summary  : No detailed summary available
@@ -60,6 +60,7 @@ Summary: python3 components for the pypi-jupyterlite_core package.
 Group: Default
 Requires: python3-core
 Provides: pypi(jupyterlite_core)
+Requires: pypi(doit)
 Requires: pypi(jupyter_core)
 
 %description python3
@@ -75,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1723571284
+export SOURCE_DATE_EPOCH=1723573452
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
