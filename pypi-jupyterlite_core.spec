@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-jupyterlite_core
-Version  : 0.4.2
-Release  : 5
-URL      : https://files.pythonhosted.org/packages/b8/80/9d0501892eda4457057f2c777a88f159c8f8dc12613513e9316e384b0568/jupyterlite_core-0.4.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b8/80/9d0501892eda4457057f2c777a88f159c8f8dc12613513e9316e384b0568/jupyterlite_core-0.4.2.tar.gz
+Version  : 0.4.3
+Release  : 6
+URL      : https://files.pythonhosted.org/packages/0b/e4/dfcc1a5dcb0d66ee89c8bb034bf99df29e30780c82747b38c74d9afd8bd6/jupyterlite_core-0.4.3.tar.gz
+Source0  : https://files.pythonhosted.org/packages/0b/e4/dfcc1a5dcb0d66ee89c8bb034bf99df29e30780c82747b38c74d9afd8bd6/jupyterlite_core-0.4.3.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -68,15 +68,15 @@ python3 components for the pypi-jupyterlite_core package.
 
 
 %prep
-%setup -q -n jupyterlite_core-0.4.2
-cd %{_builddir}/jupyterlite_core-0.4.2
+%setup -q -n jupyterlite_core-0.4.3
+cd %{_builddir}/jupyterlite_core-0.4.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1728050795
+export SOURCE_DATE_EPOCH=1729000576
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
