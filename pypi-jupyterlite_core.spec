@@ -7,7 +7,7 @@
 #
 Name     : pypi-jupyterlite_core
 Version  : 0.4.3
-Release  : 6
+Release  : 7
 URL      : https://files.pythonhosted.org/packages/0b/e4/dfcc1a5dcb0d66ee89c8bb034bf99df29e30780c82747b38c74d9afd8bd6/jupyterlite_core-0.4.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/0b/e4/dfcc1a5dcb0d66ee89c8bb034bf99df29e30780c82747b38c74d9afd8bd6/jupyterlite_core-0.4.3.tar.gz
 Summary  : No detailed summary available
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1729000576
+export SOURCE_DATE_EPOCH=1730208265
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
