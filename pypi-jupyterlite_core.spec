@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-jupyterlite_core
-Version  : 0.6.0
-Release  : 13
-URL      : https://files.pythonhosted.org/packages/36/eb/d240f3f4366acc96fe74f770cb01be35b49d24670cb78239e0901200aa07/jupyterlite_core-0.6.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/36/eb/d240f3f4366acc96fe74f770cb01be35b49d24670cb78239e0901200aa07/jupyterlite_core-0.6.0.tar.gz
+Version  : 0.6.1
+Release  : 14
+URL      : https://files.pythonhosted.org/packages/69/ae/2cb876cae3c572d1499d18d84dcd9009951eab473fe5318b11994616f16c/jupyterlite_core-0.6.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/69/ae/2cb876cae3c572d1499d18d84dcd9009951eab473fe5318b11994616f16c/jupyterlite_core-0.6.1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -68,15 +68,15 @@ python3 components for the pypi-jupyterlite_core package.
 
 
 %prep
-%setup -q -n jupyterlite_core-0.6.0
-cd %{_builddir}/jupyterlite_core-0.6.0
+%setup -q -n jupyterlite_core-0.6.1
+cd %{_builddir}/jupyterlite_core-0.6.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1748897583
+export SOURCE_DATE_EPOCH=1749225070
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -113,7 +113,7 @@ LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pypi-jupyterlite_core
-cp %{_builddir}/jupyterlite_core-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyterlite_core/34a2c2b8c5a0455f4077b3e776abaf308faa0648 || :
+cp %{_builddir}/jupyterlite_core-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/pypi-jupyterlite_core/d0827272d98fa3200f01ab8da955538ec434de4a || :
 python3 -m installer --destdir=%{buildroot} dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -128,7 +128,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/pypi-jupyterlite_core/34a2c2b8c5a0455f4077b3e776abaf308faa0648
+/usr/share/package-licenses/pypi-jupyterlite_core/d0827272d98fa3200f01ab8da955538ec434de4a
 
 %files python
 %defattr(-,root,root,-)

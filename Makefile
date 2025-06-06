@@ -1,5 +1,5 @@
 PKG_NAME := pypi-jupyterlite_core
-URL = https://files.pythonhosted.org/packages/36/eb/d240f3f4366acc96fe74f770cb01be35b49d24670cb78239e0901200aa07/jupyterlite_core-0.6.0.tar.gz
+URL = https://files.pythonhosted.org/packages/69/ae/2cb876cae3c572d1499d18d84dcd9009951eab473fe5318b11994616f16c/jupyterlite_core-0.6.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
